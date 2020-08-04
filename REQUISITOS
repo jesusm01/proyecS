@@ -1,0 +1,86 @@
+Desarrollar una aplicación móvil para la venta de comida rápida, con las siguientes especificaciones y tecnologías. se puede trabajar en equipos de 3 personas.
+Tecnologías 
+MongoDb 3.0 +.
+Nodejs 8.1 +
+Android api 19 +
+Requerimientos.
+
+1. Servicio Rest.
+
+
+Se deben implementar los siguientes servicios, siguiendo  los estándares de api rest.
+
+
+
+1.-Creación de Restaurantes         [...........]
+POST            [...........]
+PUT             [...........]
+PATCH           [...........]
+GET             [...........]
+DELETE          [...........]
+
+El Restaurant debe contar con los siguientes atributos,
+Nombre
+Nit
+Propietario
+Calle
+Telefono
+Log
+Lat
+Logo
+fechaderegistro
+fotolugar
+
+
+
+2. Creación de Menus                [...........]
+
+/menus
+
+POST            [...........]
+GET             [...........]
+UPDATE          [...........]
+DELETE,         [...........]
+
+Los menús deberán contemplar, los siguientes atributos.
+
+Nombre
+precio
+descripción
+fechaderegistro
+fotografía del producto. 
+
+
+
+3. Creación de Órdenes.             [...........]
+
+/orden
+
+Las ordenen son los pedidos que un cliente realiza a un restaurante en función a su menu.
+
+POST            [...........]
+GET             [...........]
+UPDATE          [...........]
+DELETE          [...........]
+
+atributos
+
+idmenu[]
+idrestorant[]
+cantidad[]
+idcliente
+lugardeenvio(lat
+long)
+pagototal
+
+
+
+
+4. Creación de facturas             [...........]
+
+El sistema deberá emitir una factura imprimible, al usuario y mandarsela a su 
+correo electrónico,
+
+Get             [...........]
+
+/factura
